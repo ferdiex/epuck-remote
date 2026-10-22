@@ -30,6 +30,8 @@ calibrated on a wooden floor against white and painted walls.
   <a href="docs/img/real_arena.jpg"><img src="docs/img/real_arena.jpg" width="60%" alt="Real e-puck 1 in its 63 x 63 cm arena with a black food patch"></a>
 </p>
 
+https://github.com/user-attachments/assets/52686346-84cd-4799-993d-4a307d79a2cc
+
 The real arena: 63 x 63 cm, white foam-board walls about 9 cm high, white
 floor, a 15 cm black food patch printed with a laser printer
 (`docs/food_patch_circles.pdf`; print at 100%).
