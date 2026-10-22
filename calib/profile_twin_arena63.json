@@ -1,0 +1,10 @@
+{
+  "_comment": "PyBullet twin of the real 63 x 63 cm arena with its 15 cm black food patch at the centre, timed like the real robots over Bluetooth (5 Hz, ~85 ms latency, max_speed 0.08). Use with --floor to log the ground sensors. Forager (food demo): food_threshold 500 (twin floor ~860, patch ~170).",
+  "backend": "sim",
+  "arena": 0.63,
+  "food": "0,0,0.075",
+  "hz": 5,
+  "sim_latency": 0.085,
+  "max_speed": 0.08,
+  "food_threshold": 500
+}

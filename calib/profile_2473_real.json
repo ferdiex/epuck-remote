@@ -1,0 +1,13 @@
+{
+  "_comment": "e-puck 1 #2473, asercom firmware (selector 3), Windows 10, outgoing Bluetooth port COM5. Measured 2026-10-15 on a wooden (parquet) floor with a white-paper wall: 500/500 steps/s for 5 s covered 34 cm (model 31.7) -> speed_scale 0.93; -300/300 for 5 s turned ~405 deg (model ~417) -> turn_scale 1.10; white wall reads ~3.3-4 cm closer than the model -> ir_shift 0.035 (use ~0.01 for the mahogany-painted board); background of ps5 drifts by ~25 counts between places -> ir_margin 30; Bluetooth round trip ~85 ms per command -> hz 5. Options given on the command line win over these. At 5 Hz the robot moves 2.6 cm per control step at full speed; in the twin that gave 2-7% of steps touching obstacles, and max_speed 0.08 m/s brought it to ~0-1%.",
+  "backend": "real",
+  "port": "COM5",
+  "hz": 5,
+  "speed_scale": 0.93,
+  "turn_scale": 1.1,
+  "trim": 0.0,
+  "calib": "calib/baseline_2473.json",
+  "ir_shift": 0.035,
+  "ir_margin": 30,
+  "max_speed": 0.08
+}

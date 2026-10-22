@@ -1,0 +1,14 @@
+{
+  "_comment": "e-puck 1 #2292, original firmware DemoGCtronic-complete-rev123 (asercom 1.2.2, M returns five numbers), Windows 10, outgoing Bluetooth port COM7. Measured 2026-10-21 in the 63 x 63 cm arena (white paper floor, white foam-board walls ~7 cm): 500/500 steps/s for 5.04 s covered 32.5 cm (model 31.7) -> speed_scale 0.975; -300/300 for 5 s turned ~405 deg (model 415) -> turn_scale 1.05; drives straight -> trim 0; two approaches to the white wall, ending ~2 cm (measured) -> ir_shift 0.02 (estimates +2.1 and +2.2 cm); IR background in the arena centre: ps5 high but steady (261), ps0 noisy (std 16) -> calib/baseline_2292.json and ir_margin 30; Bluetooth ~56 ms per command -> hz 5 leaves room for the ground sensors (--floor). Ground sensors: arena floor 407-588, printed 15 cm black patch 145-226 -> food threshold ~330. max_speed 0.08 as for 2473 (at 5 Hz full speed reacts too late). Options given on the command line win over these. Forager (food demo): food_threshold 330, from the ground readings above.",
+  "backend": "real",
+  "port": "COM7",
+  "hz": 5,
+  "max_speed": 0.08,
+  "speed_scale": 0.975,
+  "turn_scale": 1.05,
+  "trim": 0.0,
+  "calib": "calib/baseline_2292.json",
+  "ir_shift": 0.02,
+  "ir_margin": 30,
+  "food_threshold": 330
+}

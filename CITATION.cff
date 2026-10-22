@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "epuck-remote: remote control of the e-puck 1 with a PyBullet twin"
+abstract: >-
+  Remote control of the e-puck 1 robot over Bluetooth with the stock
+  GCtronic firmware (advanced sercom protocol), together with a PyBullet
+  twin and a dependency-free mock that speak the same protocol, so that the
+  same controller and logs are used in simulation and on the real robot.
+  Includes calibration tools and the measured calibration of one real
+  e-puck 1.
+type: software
+authors:
+  - family-names: "Montes-Gonzalez"
+    given-names: "Fernando"
+    orcid: "https://orcid.org/0000-0002-8024-3023"
+    affiliation: "Instituto de Investigaciones en Inteligencia Artificial, Universidad Veracruzana"
+version: "0.1.0"
+date-released: "2026-10-15"
+license: MIT
+repository-code: "https://github.com/ferdiex/epuck-remote"
+keywords:
+  - e-puck
+  - evolutionary robotics
+  - sim-to-real
+  - PyBullet
+  - Bluetooth
+  - robot control

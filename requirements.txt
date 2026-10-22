@@ -1,0 +1,8 @@
+numpy
+matplotlib
+pyserial      # real robot (Bluetooth serial port)
+imageio       # optional: --video, MP4 of the twin
+imageio-ffmpeg
+# pybullet (sim backend) is installed separately by scripts/setup.sh:
+# it has no prebuilt wheel for every Python version and building it from
+# source needs a working C++ toolchain.

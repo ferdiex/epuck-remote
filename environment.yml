@@ -1,0 +1,14 @@
+# conda / mamba environment (recommended on macOS): conda-forge ships
+# prebuilt pybullet, so nothing is compiled. Python is left unpinned on
+# purpose: the solver picks a version for which pybullet exists.
+name: epuck-remote
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - pybullet
+  - numpy
+  - matplotlib
+  - pyserial
+  - imageio          # --video (MP4 of the twin)
+  - imageio-ffmpeg

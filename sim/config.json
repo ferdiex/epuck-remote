@@ -1,0 +1,65 @@
+{
+  "_comment": "e-puck 1 twin. world, epuck, sensors, floor and the food values of task copied from easabrain_config.json (themselves from easagru, commit 2c3191d); Khepera, camera, vision and perturbation sections dropped. The control rate here is set by epuck-remote (--hz), not by sensors.control_period_steps.",
+  "world": {
+    "gravity": -9.81,
+    "timestep": 0.00833333,
+    "solver_iterations": 150,
+    "arena_size": 1.0,
+    "wall_height": 0.1,
+    "wall_thickness": 0.02,
+    "floor_friction": 0.5
+  },
+  "epuck": {
+    "urdf_path": "robots/epuck.urdf",
+    "urdf_lean_path": "robots/epuck_lean.urdf",
+    "max_wheel_angvel": 6.28,
+    "wheel_radius": 0.02,
+    "axle_length": 0.052,
+    "wheel_motor_force": 2.0,
+    "linear_damping": 0.9,
+    "angular_damping": 0.9,
+    "spawn_z": 0.0005,
+    "friction": {
+      "wheel": 1.5,
+      "chassis": 0.1,
+      "caster": 0.05
+    },
+    "body_led": {
+      "_comment": "Body LED led8 (the visual signal), measured from the EPUCK_BODY_LED mesh in E-puck.proto: only two arcs (front and rear; the wheels take the sides). Angles in the robot frame, x forward, y left.",
+      "z": [
+        0.001,
+        0.037
+      ],
+      "radius": 0.035,
+      "arcs_deg": [
+        [
+          -45.0,
+          45.0
+        ],
+        [
+          140.0,
+          220.0
+        ]
+      ]
+    },
+    "ir_rays": {
+      "_comment": "IR rays per e-puck sensor (Webots DistanceSensor numberOfRays). aperture from E-puckDistanceSensor.proto; gaussian_width is the Webots default (1). easabrain uses 5 (needed there to see the low Khepera II body); kept as default.",
+      "n_rays": 5,
+      "aperture": 0.1,
+      "gaussian_width": 1.0
+    }
+  },
+  "sensors": {
+    "_comment": "as easagru: control every 8 physics steps (66.7 ms); sensor noise on (Webots lookup-table noise)",
+    "control_period_steps": 8,
+    "noise": true
+  },
+  "floor": {
+    "reflectance": 1.0
+  },
+  "task": {
+    "food_radius": 0.1,
+    "food_reflectance": 0.2,
+    "on_food_threshold": 500
+  }
+}

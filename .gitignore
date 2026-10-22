@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# run outputs and working calibration files
+runs/
+calib/*.csv
+calib/*.png
+readme_run.csv
+*.lock
+
+# third-party binaries: keep them out of the repo (see docs/firmware.md)
+*.hex
+tinybld*
+*.exe
+
+# editors / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

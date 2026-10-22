@@ -1,0 +1,7 @@
+{
+  "_comment": "PyBullet twin timed like e-puck #2473 over Bluetooth: 5 Hz control loop and ~85 ms between reading the sensors and the new wheel command taking effect. Motion and IR knobs stay at their defaults: they correct the real robot towards the model, which the twin already is. max_speed 0.08 as in the real profile (at 5 Hz full speed reacts too late: 2-7% of steps touching obstacles in the twin, ~0-1% at 0.08).",
+  "backend": "sim",
+  "hz": 5,
+  "sim_latency": 0.085,
+  "max_speed": 0.08
+}
